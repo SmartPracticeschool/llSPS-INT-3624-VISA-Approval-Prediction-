@@ -1,0 +1,110 @@
+<html>
+<style>
+*{
+  margin:0;
+  padding:0;
+  }
+  body {
+  background-image: url("http://blogs.adobe.com/dreamweaver/files/2015/06/raindrops-nofilter.png?fit=539%2C320&ssl=1");
+  background-size:cover;
+  background-position:center;
+  margin-top:40px;
+  font-family:sans-serif;
+  }
+  .header{
+            width:800px;
+            background-color:rgb(0,0,0,6);
+            margin:auto;
+            color:#FFFFFF;
+            padding:10px 0px 10px 0px;
+            text-align:center;
+            border-radius:15px 15px 0px 0px;
+         }
+ .MAIN button
+{
+height:30px;
+width:200px;
+margin-left:60px;
+background-color:rgb;
+}
+ .MAIN {
+        background-color:rgb(0,0,0,0.5);
+        width:800px;
+        margin:auto;
+        text-align:center;
+        } 
+    form{
+         padding:100px;
+         }   
+                    
+
+
+</style>
+<body>
+<div class="header">
+<h1>VISA APPROVAL PREDICTION</h1>
+</div>
+<div class="MAIN">
+<form action = "{{url_for('prediction')}}" method = "post">
+<br>
+<label for = "FULL_TIME_POSITION">FULL_TIME_POSITION</label>
+<select name = "FULL_TIME_POSITION">
+<option value = "Yes">Yes</option>
+<option value = "No">No</option>
+</select>
+<br>
+<br>
+<p> PREVAILING_WAGE <span><input type = "text" name = "PREVAILING_WAGE"/></span></p>
+</br>
+<br>
+<p> YEAR <span><input type = "text" name = "YEAR"/></span></p>
+</br>
+<br>
+<label for = "NEW_EMPLOYER">NEW_EMPLOYER</label>
+<select name = "NEW_EMPLOYER">
+<option value = "-Select-">-Select</option>
+<option value = "University">University</option>
+<option value = "Non University">Non University</option>
+</select>
+</br>
+<br>
+<label for = "OCCUPATION">OCCUPATION</label>
+<select name = "OCCUPATION">
+<option value = "-Select-">-Select-</option>
+<option value = "Advance Sciences">Advance Sciences</option>
+<option value = "Architecture & Engineering">Architecture & Engineering</option>
+<option value = "Business Occupation">Business Occupation</option>
+<option value = "computer occupations">computer occupations</option>
+<option value = "Financial Occupation">Financial Occupation</option>
+<option value = "Management Occupation">Management Occupation</option>
+<option value = "Marketing Occupation">Marketing Occupation</option>
+<option value = "Medical Occupations">Medical Occupations</option>
+<option value = "Others">Others</option>
+</select>
+</br>
+
+<br>
+<label for = "STATE">STATE</label>
+<select name = "STATE">
+<option value = "-Select-">-Select-</option>
+<option value = "MICHIGAN">MICHIGAN</option>
+<option value = "TEXAS">TEXAS</option>
+<option value = "JERSEY">JERSEY</option>
+<option value = "COLORADO">COLORADO</option>
+<option value = "FLORIDA">FLORIDA</option>
+<option value = "CALIFORNIA">CALIFORNIA</option>
+<option value = "PENNSYLVANIA">PENNSYLVANIA</option>
+<option value = "MASSACHUSETTS">MASSACHUSETTS</option>
+<option value = "VIRGINIA">VIRGINIA</option>
+<option value = "WISCONSIN">WISCONSIN</option>
+</select>
+</br>
+
+<br>
+<button type="submit" >SUBMIT</button></br>
+</form>
+<b>{{showcase}}</b>
+
+</div>
+</body>
+</html>
